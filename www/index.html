@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+<!--
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+-->
+<!--
+    <link href="css/style.css" rel="stylesheet">
+-->
+    <link href="materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- Ionicitude -->
+    <script src="lib/ionicitude/dist/ionicitude.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="demo" ng-controller="MainCtrl" class="platform-android platform-cordova platform-webview">
+          <div class="row">
+              <ul class="collection with-header">
+                  <li class="collection-header teal lighten-2"><h4>Giovannelli Alexis - Wikitude app</h4></li>
+              </ul>
+          </div>
+          <div class="row">
+              <ul class="collection with-header">
+                  <li class="collection-header light-blue darken-1 white-text"><h5>Réalité aumentée - Système solaire</h5></li>
+                  <li class="collection-item" ng-click="launchAR('x_Demo_2_SolarSystem(Geo)')">
+                    Solar System (Geo)<a href="#" class="secondary-content"><i class="material-icons">send</i></a></li>
+                  <li class="collection-item" ng-click="launchAR('x_Demo_3_SolarSystem(2dTracking)')">
+                    Solar System (2D Tracking)<a href="#" class="secondary-content"><i class="material-icons">send</i></a></li>
+              </ul>
+            </div>
+          <div class="row">
+              <ul class="collection with-header">
+                  <li class="collection-header light-blue darken-1 white-text"><h5>Vidéos</h5></li>
+                  <li class="collection-item">Vidéo Youtube - Django Oiseaux<a href="videoYoutube.html" class="secondary-content"><i class="material-icons">send</i></a></li>
+                  <li class="collection-item">Vidéo locale - Eminem Till I Collapse<a href="videoLocale.html" class="secondary-content"><i class="material-icons">send</i></a></li>
+              </ul>
+          </div>
+  </body>
+</html>
